@@ -33,3 +33,15 @@ Visualizations (scatter plots, regression plots, pie charts)
 
 Dataset
 Dataset: TMDB 10000 Movies Dataset (Kaggle).
+
+## Sample Visualizations
+
+### Clustering Plot
+![Clustering Plot](images/Picture1.png)
+
+### Regression Plot
+![Regression Plot](images/Picture2.png)
+
+### Cluster Distribution
+![Pie Chart](images/Picture3.png)
+
