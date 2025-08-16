@@ -51,13 +51,16 @@ df['pca2'] = pca_result[:,1]
 plt.figure(figsize=(8,6))
 sns.scatterplot(x='pca1', y='pca2', hue='cluster', data=df, palette='Set2')
 plt.title("KMeans Clustering on TMDB Movies (PCA Reduced)")
+plt.savefig("images/cluster_plot.png")
 plt.show()
 
 sns.regplot(x="vote_average", y="popularity", data=df, scatter_kws={'alpha':0.5})
 plt.title("Popularity vs Vote Average")
+plt.savefig("images/regression_plot.png")
 plt.show()
 
 df['cluster'].value_counts().plot.pie(autopct='%1.1f%%', figsize=(6,6))
 plt.title("Distribution of Movies by Cluster")
 plt.ylabel("")
+plt.savefig("images/pie_chart.png")
 plt.show()
